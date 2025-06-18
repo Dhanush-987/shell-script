@@ -1,7 +1,12 @@
-£!/bin/bash
+$!/bin/bash
 
-echo "Dhanush : Hello , H W R"
-echo "Reddy : I am abosultely fine"
+var1 = " Bitch"
+var2 ="Yo Yo"
+
+
+echo "Whats Up: $var1"
+echo "Reddy : $var2"
+
 
 
 
