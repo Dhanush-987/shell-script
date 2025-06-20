@@ -8,16 +8,16 @@ then
     exit 1
 fi
 
-dnf list installed mysql
+dnf list installed mysql-server
 
 if [ $? -ne 0 ]
 then
-    dnf install mysql -y
+    dnf install mysql-server -y
     if [ $? -ne 0 ]
     then
         echo "MySql installation failure"
     else
-        echo "MySql installation Success"
+        echo "MySql installation Success" 
     fi
 else
     echo "My Sql is already installed"
