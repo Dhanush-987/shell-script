@@ -12,7 +12,7 @@ validate() {
     fi
 }
 
-if [ user -ne 0 ]
+if [ $user -ne 0 ]
 then
     echo "you must have sudo access"
     exit 1
