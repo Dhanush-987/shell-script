@@ -8,11 +8,11 @@ then
     exit 1
 fi
 
-dnf list installed mysql-server
+dnf list installed mysql-community-server
 
 if [ $? -ne 0 ]
 then
-    dnf install mysql-server -y
+    dnf install mysql-community-server -y
     if [ $? -ne 0 ]
     then
         echo "MySql installation failure"
